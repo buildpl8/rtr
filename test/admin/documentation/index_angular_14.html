@@ -1,0 +1,766 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title> Documentation - Color Admin</title>
+	<!-- Bootstrap styles -->
+	<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="assets/bootstrap/css/docs.css" rel="stylesheet">
+	<link href="assets/bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+	<div class="navbar navbar-inverse navbar-page">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">Admin Template</a>
+				
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="">
+							<a href="index.html">Design Template</a>
+						</li>
+						<li class="">
+							<a href="index_ajax.html">Ajax Version</a>
+						</li>
+						<li class="">
+							<a href="index_angular_1x.html">Angular 1.x</a>
+						</li>
+						<li class="active">
+							<a href="index_angular_14.html">Angular 14.0</a>
+						</li>
+						<li class="">
+							<a href="index_laravel.html">Laravel Version</a>
+						</li>
+						<li class="">
+							<a href="index_vue.html">Vue Version</a>
+						</li>
+						<li class="">
+							<a href="index_react.html">React Version</a>
+						</li>
+						<li class="">
+							<a href="index_asp.html">ASP.NET</a>
+						</li>
+						<li>
+							<a href="index_change_log.html">Change Log</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="jumbotron subhead" id="overview">
+		<div class="container">
+			<h1 class="text-center">Color Admin</h1>
+			<p class="lead text-center">&ldquo;Angular 14 Version&rdquo; Documentation by &ldquo;Sean Ngu&rdquo; v5.1.5</p>
+		</div>
+		<div class="jumbotron-cover"></div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="well with-cover">
+					<div class="well-cover" style="background-image: url(assets/images/angular.jpg); background-size: auto 80%; background-position: center; background-repeat: no-repeat; background-color: #fff;"><span style="position: absolute; bottom: 25px; right: 70px; font-weight: bold;">14.0</span></div>
+					<p>
+						<strong>
+							Last Updated: 08/September/2022<br>
+							By: Sean Ngu<br>
+							Email: <a href="mailto:nguoksiong@live.co.uk">nguoksiong@live.co.uk</a>
+						</strong>
+					</p>
+					<p>
+						Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file,
+						please feel free to email your question to my email <a href="mailTo:nguoksiong@live.co.uk">nguoksiong@live.co.uk</a>. Thanks so much!
+					</p>
+			
+				</div>
+			</div><!-- end span12 -->
+		</div><!-- end row -->
+		<div class="row">
+			<div class="span3 bs-docs-sidebar">
+				<ul class="nav nav-list bs-docs-sidenav affix-top">
+					<li><a href="#installation"><i class="icon-chevron-right"></i>Installation</a></li>
+					<li><a href="#fileStructure"><i class="icon-chevron-right"></i>File Structure</a></li>
+					<li><a href="#pageStructure"><i class="icon-chevron-right"></i>Page Structure</a></li>
+					<li><a href="#page-options"><i class="icon-chevron-right"></i>Page Options</a></li>
+					<li><a href="#page-dark-mode"><i class="icon-chevron-right"></i>Dark Mode <span class="label">NEW</span></a></li>
+					<li><a href="#page-switch-design"><i class="icon-chevron-right"></i>Switch Design <span class="label">NEW</span></a></li>
+					<li><a href="#page-jquery"><i class="icon-chevron-right"></i>Using jQuery Plugins</a></li>
+					<li><a href="#page-scss"><i class="icon-chevron-right"></i>SCSS</a></li>
+					<li><a href="#npm-package"><i class="icon-chevron-right"></i>NPM Package</a></li>
+				</ul>
+			</div>
+			<div class="span9">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="page-header">
+							<h3 id="installation"><strong>A) Installation</strong> - <a href="#top">top</a></h3>
+						</div>
+						<p>
+							Follow the following step to install the angular 14 in your localhost<br />
+							You may refer to their official documentation for how to setup the development environment. <br />
+							<a href="https://angular.io/guide/setup" target="_blank">Setup Guide</a>
+						</p>
+<pre class="prettyprint linenums">
+&lt;!-- run the following command --&gt;
+cd /your-path-url/template_angular14
+npm install --force
+ng serve
+
+&lt;!-- browse the url --&gt;
+http://localhost:4200/
+</pre>
+						<p>
+							Verify that you are running at least node <code>16.13.x</code> or later and <code>npm 8.x.x</code> by running <code>node -v</code> and <code>npm -v</code> in a terminal/console window. Older versions produce errors, but newer versions are fine.
+						</p>
+						<hr />
+						<p>Copy over the required image from global <code>assets</code> folder</p>
+<pre class="prettyprint linenums">
+&lt;!-- copy the following folder--&gt;
+/admin/template/assets/img
+ 
+&lt;!-- paste it into Angular 14 folder --&gt;
+/admin/template/template_angular14/src/assets/img
+</pre>
+					</div>
+				</div><!-- end row-fluid -->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="page-header">
+							<h3 id="fileStructure"><strong>B) File Structure</strong> - <a href="#top">top</a></h3>
+						</div>
+						<p>File structure overview for Angular JS 14 Version</p>
+						
+<pre class="prettyprint linenums">
+template_angularjs14/
+├── angular.json
+├── karma.conf.js
+├── package.json
+├── protractor.conf.js
+├── README.md
+├── tsconfig.json
+├── tslint.json
+├── e2e/
+└── src/
+    ├── favicon.ico
+    ├── index.html
+    ├── main.ts
+    ├── polyfills.ts
+    ├── styles.css
+    ├── tsconfig.app.json
+    ├── tsconfig.spec.json
+    ├── typings.d.ts
+    ├── app/
+    │   ├── app.routing.module.ts
+    │   ├── app.component.css
+    │   ├── app.component.html
+    │   ├── app.component.ts
+    │   ├── app.module.ts
+    │   ├── components/
+    │   ├── config/
+    │   └── pages/
+    ├── assets/ 
+    ├── environments/
+    └── scss/
+</pre>
+					</div><!-- end span12 -->
+				</div><!-- end row-fluid -->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="page-header">
+							<h3 id="pageStructure"><strong>C) Page Structure</strong> - <a href="#top">top</a></h3>
+						</div>
+						<p>Below is the code from <code>app.component.html</code> which include the loading bar, header, sidebar, right sidebar, top menu, page content and footer. You may remove the component if you are not using it.</p>
+<pre class="prettyprint linenums">
+&lt;ngx-loading-bar [ngClass]="{ 'top': appSettings.appEmpty }"&gt;&lt;/ngx-loading-bar&gt;
+
+&lt;!-- BEGIN #app --&gt;
+&lt;div id="app" class="app" [ngClass]="{
+    'has-scroll' : appHasScroll,
+    'app-sidebar-minified': appSettings.appSidebarMinified,
+    'app-sidebar-fixed': !appSettings.appSidebarNone && appSettings.appSidebarFixed,
+    'app-header-fixed': !appSettings.appHeaderNone && appSettings.appHeaderFixed,
+    'app-without-sidebar': appSettings.appSidebarNone || appSettings.appEmpty,
+    'app-without-header': appSettings.appHeaderNone || appSettings.appEmpty,
+    'app-with-end-sidebar': appSettings.appSidebarEnd,
+    'app-with-two-sidebar': appSettings.appSidebarTwo,
+    'app-with-wide-sidebar': appSettings.appSidebarWide,
+    'app-with-light-sidebar': appSettings.appSidebarLight,
+    'app-sidebar-end-toggled': appSettings.appSidebarEndToggled,
+    'app-sidebar-mobile-toggled': appSettings.appSidebarMobileToggled,
+    'app-content-full-height': appSettings.appContentFullHeight,
+    'app-with-top-menu': appSettings.appTopMenu,
+    'app-sidebar-end-mobile-toggled': appSettings.appSidebarEndMobileToggled,
+    'app-gradient-enabled': appSettings.appGradientEnabled,
+    'p-0': appSettings.appEmpty
+  }"&gt;
+
+  &lt;top-menu *ngIf="appSettings.appTopMenu && !appSettings.appEmpty"&gt;&lt;/top-menu&gt;
+
+  &lt;header 
+    (appSidebarMobileToggled)="onAppSidebarMobileToggled($event)" 
+    (appSidebarEndToggled)="onAppSidebarEndToggled($event)" 
+    (appSidebarEndMobileToggled)="onAppSidebarEndMobileToggled($event)" 
+    [appSidebarTwo]="appSettings.appSidebarTwo" 
+    *ngIf="!appSettings.appEmpty && !appSettings.appHeaderNone"&gt;
+  &lt;/header&gt;
+
+  &lt;sidebar 
+    (appSidebarMinifiedToggled)="onAppSidebarMinifiedToggled($event)" 
+    (appSidebarMobileToggled)="onAppSidebarMobileToggled($event)" 
+    [appSidebarTransparent]="appSettings.appSidebarTransparent" 
+    [appSidebarMinified]="appSettings.appSidebarMinified"
+    [appSidebarGrid]="appSettings.appSidebarGrid"
+    [appSidebarFixed]="appSettings.appSidebarFixed"
+    *ngIf="!appSettings.appSidebarNone && !appSettings.appEmpty"&gt;
+  &lt;/sidebar&gt;
+
+  &lt;sidebar-right 
+    (appSidebarEndMobileToggled)="onAppSidebarEndMobileToggled($event)"
+    *ngIf="appSettings.appSidebarTwo && !appSettings.appEmpty"&gt;
+  &lt;/sidebar-right&gt;
+
+  &lt;div id="content" class="app-content" [ngClass]="appSettings.appContentClass + ' ' + (appSettings.appEmpty ? 'p-0 m-0' : '')"&gt;
+    &lt;router-outlet&gt;&lt;/router-outlet&gt;
+  &lt;/div&gt;
+  
+  &lt;theme-panel
+    (appDarkModeChanged)="onAppDarkModeChanged($event)"
+    (appThemeChanged)="onAppThemeChanged($event)"
+    *ngIf="!appSettings.appThemePanelNone"
+    &gt;&lt;/theme-panel&gt;
+&lt;/div&gt;
+&lt;!-- END #app --&gt;
+</pre>
+					</div><!-- end span12 -->
+				</div><!-- end row-fluid -->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="page-header">
+							<h3 id="page-options"><strong>D) Page Options</strong> - <a href="#top">top</a></h3>
+						</div>
+						<p>You may found the list of page options in <code>/src/app/config/app-settings.ts</code>. You may change the value from <b>false</b> to <b>true</b> if you wish to enable the options by page load.
+<pre class="prettyprint lineums">
+var appSettings = {
+  appTheme: '',
+  appDarkMode: false,
+  appSidebarGrid: false,
+  appSidebarFixed: true,
+  appSidebarMinified: false,
+  appSidebarNone: false,
+  appSidebarEnd: false,
+  appSidebarRightCollapsed: false,
+  appSidebarTwo: false,
+  appSidebarWide: false,
+  appSidebarTransparent: false,
+  appSidebarLight: false,
+  appSidebarSearch: false,
+  appSidebarMobileToggled: false,
+  appSidebarEndToggled: false,
+  appSidebarEndMobileToggled: false,
+  appContentFullHeight: false,
+  appContentClass: '',
+  appTopMenu: false,
+  appTopMenuMobileToggled: false,
+  appHeaderFixed: true,
+  appHeaderNone: false,
+  appHeaderInverse: false,
+  appHeaderMegaMenu: false,
+  appHeaderLanguageBar: false,
+  appHeaderMegaMenuMobileToggled: false,
+  appEmpty: false,
+  appBodyWhite: false,
+  appGradientEnabled: false,
+  appThemePanelNone: false
+};
+
+export default appSettings;
+</pre>
+						<p>If you wish to set the page options for individual page, below is the example of setting the page settings in controller.</p>
+<pre class="prettyprint linenums">
+import { Component } from '@angular/core';
+import appSettings from '../../config/app-settings';
+
+@Component({
+  selector: 'page-blank',
+  templateUrl: './page-blank.html'
+})
+
+export class PageBlank {
+  appSettings = appSettings;
+  
+  constructor() {
+    this.appSettings.appSidebarMinified = true;
+  }
+}
+</pre>
+					</div><!-- end span12 -->
+				</div><!-- end row-fluid -->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="page-header">
+							<h3 id="page-dark-mode"><strong>E) Dark Mode</strong> - <a href="#top">top</a></h3>
+						</div>
+						<p>Change the variable from <code>template_angularjs14/src/app/config/app-settings.ts</code></p>
+<pre class="prettyprint linenums">
+...
+appDarkMode: true,     // LINE 3
+...
+</pre>
+					</div><!-- end span12 -->
+				</div><!-- end row-fluid -->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="page-header">
+							<h3 id="page-switch-design"><strong>F) Switch Design</strong> - <a href="#top">top</a></h3>
+						</div>
+						<h4 style="margin-bottom: 15px">Apple Design</h4>
+						<ol>
+							<li>
+								<div style="padding-bottom: 5px;">Change variable from <code>template_angularjs14/src/scss/angular.scss</code>.</div>							
+<pre class="prettyprint linenums">
+@import 'apple/styles';
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px;">Add the following code to <code>template_angularjs14/src/styles.css</code>.</div>							
+<pre class="prettyprint linenums">
+@import 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css';
+</pre>
+							<li>
+								<div style="padding-bottom: 5px">Change the sidebar icon from Fontawesome to Ionicons and background color class is needed as well.</div>
+<pre class="prettyprint linenums">
+&lt;div class="menu-icon"&gt;
+  &lt;i class="ion-ios-pulse bg-gradient-blue"&gt;&lt;/i&gt;
+&lt;/div&gt;
+</pre>
+							</li>
+						</ol>
+						<hr style="margin-top: 30px" />
+						<h4 style="margin-bottom: 15px">Facebook Design</h4>
+						<ol>
+							<li>
+								<div style="padding-bottom: 5px;">Change variable from <code>template_angularjs14/src/scss/angular.scss</code>.</div>							
+<pre class="prettyprint linenums">
+@import 'facebook/styles';
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px">Enable app header inverse from <code>template_angularjs14/src/app/config/app-settings.ts</code>.</div>
+<pre class="prettyprint linenums">
+...
+appHeaderInverse: true,     // LINE 24
+...
+</pre>
+							</li>
+						</ol>
+						<hr style="margin-top: 30px" />
+						<h4 style="margin-bottom: 15px">Transparent Design</h4>
+						<ol>
+							<li>
+								<div style="padding-bottom: 5px;">Change variable from <code>template_angularjs14/src/scss/angular.scss</code>.</div>							
+<pre class="prettyprint linenums">
+@import 'transparent/styles';
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px">Add the <code>.app-cover</code> next to the <code>&lt;body&gt;</code> tag in <code>template_angularjs14/src/index.html</code>.</div>
+<pre class="prettyprint linenums">
+&lt;body&gt;
+  &lt;!-- BEGIN page-cover --&gt;
+  &lt;div class="app-cover"&gt;&lt;/div&gt;
+  &lt;!-- END page-cover --&gt;
+  ...
+&lt;/body&gt;
+</pre>
+							</li>
+						</ol>
+						<hr style="margin-top: 30px" />
+						<h4 style="margin-bottom: 15px">Google Design</h4>
+						<ol>
+							<li>
+								<div style="padding-bottom: 5px;">Change variable from <code>template_angularjs14/src/scss/angular.scss</code>.</div>							
+<pre class="prettyprint linenums">
+@import 'google/styles';
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px;">Add the following code to <code>template_angularjs14/src/styles.css</code>.</div>							
+<pre class="prettyprint linenums">
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+</pre>
+							<li>
+							<li>
+								<div style="padding-bottom: 5px">Change the sidebar icon from Fontawesome to Material Icons.</div>
+<pre class="prettyprint linenums">
+&lt;div class="menu-icon"&gt;
+  &lt;i class="material-icons"&gt;home&lt;/i&gt;
+&lt;/div&gt;
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px">Enable app sidebar wide & light from <code>template_angularjs14/src/app/config/app-settings.ts</code>.</div>
+<pre class="prettyprint linenums">
+...
+appSidebarWide: true,   // LINE 11
+...
+appSidebarLight: true,  // LINE 13
+...
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px">Add the navbar desktop toggler to the <code>.app-header</code>  in <code>template_angularjs14/src/app/components/header/header.component.html</code>.</div>
+<pre class="prettyprint linenums">
+&lt;!-- BEGIN #header --&gt;
+&lt;div id="header" class="app-header"&gt;
+  &lt;!-- BEGIN navbar-header --&gt;
+  &lt;div class="navbar-header"&gt;
+    &lt;button type="button" class="navbar-desktop-toggler"&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button type="button" class="navbar-mobile-toggler"&gt;
+      ...
+    &lt;/button&gt;
+    &lt;a class="navbar-brand"&gt;
+      Color Admin
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;!-- END navbar-header --&gt;
+  ...
+&lt;/div&gt;
+</pre>
+							</li>
+						</ol>
+						<hr style="margin-top: 30px" />
+						<h4 style="margin-bottom: 15px">Material Design</h4>
+						<ol>
+							<li>
+								<div style="padding-bottom: 5px;">Change variable from <code>template_angularjs14/src/scss/angular.scss</code>.</div>							
+<pre class="prettyprint linenums">
+@import 'material/styles';
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px;">Add the following code to <code>template_angularjs14/src/styles.css</code>.</div>							
+<pre class="prettyprint linenums">
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+</pre>
+							<li>
+							<li>
+								<div style="padding-bottom: 5px">Change the sidebar icon from Fontawesome to Material Icons.</div>
+<pre class="prettyprint linenums">
+&lt;div class="menu-icon"&gt;
+  &lt;i class="material-icons"&gt;home&lt;/i&gt;
+&lt;/div&gt;
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px">Enable app sidebar wide from <code>template_angularjs14/src/app/config/app-settings.ts</code>.</div>
+<pre class="prettyprint linenums">
+...
+appSidebarWide: true,   // LINE 11
+...
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px">Add the navbar desktop toggler to the <code>.app-header</code>  in <code>template_angularjs14/src/app/components/header/header.component.html</code>.</div>
+<pre class="prettyprint linenums">
+&lt;!-- BEGIN #header --&gt;
+&lt;div id="header" class="app-header"&gt;
+  &lt;!-- BEGIN navbar-header --&gt;
+  &lt;div class="navbar-header"&gt;
+    &lt;button type="button" class="navbar-desktop-toggler"&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;span class="icon-bar"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button type="button" class="navbar-mobile-toggler"&gt;
+      ...
+    &lt;/button&gt;
+    &lt;a class="navbar-brand"&gt;
+      Color Admin Material
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;!-- END navbar-header --&gt;
+  ...
+&lt;/div&gt;
+</pre>
+							</li>
+							
+							<li>
+								<div style="padding-bottom: 5px">Add the floating navbar form to the <code>.app-header</code>  in <code>template_angularjs14/src/app/components/header/header.component.html</code> AND <b>REMOVE</b> the default <code>.navbar-form</code>.</div>
+<pre class="prettyprint linenums">
+&lt;!-- BEGIN #header --&gt;
+&lt;div id="header" class="app-header"&gt;
+  &lt;!-- BEGIN header-nav --&gt;
+  &lt;div class="navbar-nav"&gt;
+    &lt;div class="navbar-item"&gt;
+      &lt;a href="#" class="navbar-link icon"&gt;
+        &lt;i class="material-icons"&gt;search&lt;/i&gt;
+      &lt;/a&gt;
+      
+      &lt;!-- REMOVE IT --&gt;
+      &lt;div class="navbar-item navbar-form"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!-- END header-nav --&gt;
+  
+  &lt;div class="navbar-floating-form"&gt;
+    &lt;button class="search-btn" type="submit"&gt;&lt;i class="material-icons"&gt;search&lt;/i&gt;&lt;/button&gt;
+    &lt;input type="text" class="form-control" placeholder="Search Something..." /&gt;
+    &lt;a href="#" class="close"&gt;
+      &lt;i class="material-icons"&gt;close&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+							</li>
+							<li>
+								<div style="padding-bottom: 5px">Change the <code>.app-loader</code>  in <code>template_angularjs14/src/index.html</code>.</div>
+<pre class="prettyprint linenums">
+&lt;!-- BEGIN #loader --&gt;
+&lt;div id="loader" class="app-loader"&gt;
+  &lt;div class="material-loader"&gt;
+    &lt;svg class="circular" viewBox="25 25 50 50"&gt;
+      &lt;circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"&gt;&lt;/circle&gt;
+    &lt;/svg&gt;
+    &lt;div class="message"&gt;Loading...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- END #loader --&gt;
+</pre>
+							</li>
+						</ol>
+					</div><!-- end span12 -->
+				</div><!-- end row-fluid -->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="page-header">
+							<h3 id="page-jquery"><strong>G) Using jQuery Plugins</strong> - <a href="#top">top</a></h3>
+						</div>
+						<p>
+							Here is an example for how to use jQuery plugins in Angular 11 (DataTables)
+						</p>
+						<div style="margin-bottom: 5px;"><b>NPM INSTALLATION:</b></div>
+<pre class="prettyprint linenums">
+npm install @types/jquery --save
+npm install datatables
+npm install datatables.net-bs
+npm install datatables.net-responsive-bs
+</pre>
+						<div style="margin-bottom: 5px;"><b>INCLUDE CSS:</b> <code>/src/styles.css</code></div>
+<pre class="prettyprint linenums">
+@import "~datatables.net-bs/css/dataTables.bootstrap.min.css";
+@import "~datatables.net-responsive-bs/css/responsive.bootstrap.min.css";
+</pre>
+						<div style="margin-bottom: 5px;"><b>TYPESCRIPT FILE:</b></div>
+<pre class="prettyprint linenums">
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import * as $ from 'jquery';
+import 'datatables';
+import 'datatables.net-bs';
+import 'datatables.net-responsive-bs';
+
+@Component({
+  selector: 'index',
+  templateUrl: './index.html'
+})
+
+export class IndexPage implements AfterViewInit {
+  ngAfterViewInit() {
+    $(document).ready(function() {
+       $('#data-table').DataTable({
+        responsive: true
+       });
+    });
+  }
+}
+</pre>
+					<div style="margin-bottom: 5px;"><b>ADD THIS TO /src/typings.d.ts</b></div>
+<pre class="prettyprint linenums">
+interface JQuery {
+  DataTable(options?: any, callback?: Function) : any;
+}
+</pre>
+					</div>
+				</div><!-- end row-fluid -->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="page-header">
+							<h3 id="page-scss"><strong>H) Using SCSS</strong> - <a href="#top">top</a></h3>
+						</div>
+						<p>Angular 11 now is fully configured with scss file settings. You may include / switch the Color Admin theme by changing the file <code>/template_angular11/src/scss/angular.scss</code>.</p>
+<pre class="prettyprint linenums">
+@import 'default/styles';
+
+&lt;!-- other themes --&gt;
+@import 'apple/styles';
+@import 'facebook/styles';
+@import 'google/styles';
+@import 'material/styles';
+@import 'transparent/styles';
+</pre>
+					</div><!-- end span12 -->
+				</div><!-- end row-fluid -->
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="page-header">
+							<h3 id="npm-package"><strong>I) NPM Package</strong> - <a href="#top">top</a></h3>
+						</div>
+						<p>
+							Below is the list of package that has been installed in this project. You may use the following example to find the package from their official website.
+							<code>https://www.npmjs.com/package/</code><code>@ng-bootstrap/ng-bootstrap</code>
+						</p>
+<pre class="prettyprint linenums">
+{
+  "name": "color-admin",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "postinstall": "node remove-css-imports.js ngcc"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-devkit/build-angular": "~14.2.1",
+    "@angular/animations": "^14.2.0",
+    "@angular/cdk": "^14.2.0",
+    "@angular/cli": "^14.2.1",
+    "@angular/common": "^14.2.0",
+    "@angular/compiler": "^14.2.0",
+    "@angular/compiler-cli": "^14.2.0",
+    "@angular/core": "^14.2.0",
+    "@angular/forms": "^14.2.0",
+    "@angular/language-service": "^14.2.0",
+    "@angular/localize": "^14.2.0",
+    "@angular/material": "^14.2.0",
+    "@angular/platform-browser": "^14.2.0",
+    "@angular/platform-browser-dynamic": "^14.2.0",
+    "@angular/router": "^14.2.0",
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@fullcalendar/angular": "^5.11.2",
+    "@fullcalendar/bootstrap": "^5.11.3",
+    "@fullcalendar/core": "^5.11.3",
+    "@fullcalendar/daygrid": "^5.11.3",
+    "@fullcalendar/interaction": "^5.11.3",
+    "@fullcalendar/list": "^5.11.3",
+    "@fullcalendar/resource-timegrid": "^5.11.3",
+    "@fullcalendar/timegrid": "^5.11.3",
+    "@ng-bootstrap/ng-bootstrap": "^13.0.0",
+    "@ngx-loading-bar/core": "^6.0.2",
+    "@ngx-loading-bar/router": "^6.0.2",
+    "@sweetalert2/ngx-sweetalert2": "^11.0.0",
+    "@swimlane/ngx-charts": "^20.1.0",
+    "@swimlane/ngx-datatable": "^20.0.0",
+    "@types/jasmine": "~4.3.0",
+    "@types/jasminewd2": "~2.0.10",
+    "@types/node": "^18.7.15",
+    "@yaireo/tagify": "^4.16.4",
+    "angular-calendar": "^0.30.1",
+    "apexcharts": "^3.35.5",
+    "bootstrap": "^5.2.0",
+    "bootstrap-icons": "^1.9.1",
+    "bootstrap-social": "^5.1.1",
+    "chart.js": "^3.9.1",
+    "codelyzer": "^6.0.2",
+    "core-js": "^3.25.0",
+    "d3": "^7.6.1",
+    "dart-sass": "^1.25.0",
+    "date-fns": "^2.29.2",
+    "fibers": "^5.0.3",
+    "flag-icon-css": "^4.1.6",
+    "ionicons": "^6.0.3",
+    "jasmine-core": "~4.4.0",
+    "jasmine-spec-reporter": "~7.0.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.1",
+    "karma-coverage-istanbul-reporter": "~3.0.3",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "^2.0.0",
+    "lity": "^2.4.1",
+    "masonry-layout": "^4.2.2",
+    "moment": "^2.29.4",
+    "ng-apexcharts": "^1.7.1",
+    "ng-chartjs": "^0.2.5",
+    "ng-masonry-layout": "^8.0.2",
+    "ng2-nvd3": "^2.0.0",
+    "ngx-color": "^8.0.3",
+    "ngx-countdown": "^14.0.0",
+    "ngx-daterangepicker-material": "^6.0.2",
+    "ngx-editor": "^15.0.0",
+    "ngx-highlight-js": "^14.0.0",
+    "ngx-highlightjs": "^7.0.1",
+    "ngx-masonry": "^13.0.0",
+    "ngx-nvd3": "^1.0.9",
+    "ngx-perfect-scrollbar": "^10.1.1",
+    "ngx-trend": "^8.0.0",
+    "nvd3": "^1.8.6",
+    "protractor": "~7.0.0",
+    "rxjs": "^7.5.6",
+    "rxjs-compat": "^6.6.7",
+    "simple-line-icons": "^2.5.5",
+    "sweetalert2": "^11.4.32",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "tslint": "~6.1.3",
+    "typescript": "^4.8.2",
+    "zone.js": "~0.11.8"
+  }
+}
+</pre>
+					</div>
+				</div><!-- end row-fluid -->
+			</div><!-- end span12 -->
+		</div><!-- end row-fluid -->
+	</div><!-- end container -->
+	
+	<footer class="footer">
+		<div class="container text-left">
+			<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes, you might consider visiting the forums and asking your question via <a href="mailTo:nguoksiong@live.co.uk">email</a>.</p> 
+			<br />
+			<p class="append-bottom alt large"><strong>Sean Ngu</strong></p>
+			<p><a href="#top">Go To Table of Contents</a></p>
+		</div>
+	</footer><!-- end footer -->
+	
+	<script src="assets/bootstrap/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-transition.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-alert.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-modal.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-dropdown.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-tab.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-tooltip.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-popover.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-button.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-collapse.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-carousel.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-typeahead.js"></script>
+	<script src="assets/bootstrap/js/bootstrap-affix.js"></script>
+
+	<script src="assets/bootstrap/js/holder/holder.js"></script>
+	<script src="assets/bootstrap/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/bootstrap/js/application.js"></script>
+</body>
+</html>

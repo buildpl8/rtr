@@ -1,0 +1,9 @@
+{
+    "amount": "currency",
+    "created": "datetime",
+    "credit_amount": "currency",
+    "out_of_band_amount": "currency",
+    "refund_amount": "currency",
+    "subtotal": "currency",
+    "total": "currency"
+}
